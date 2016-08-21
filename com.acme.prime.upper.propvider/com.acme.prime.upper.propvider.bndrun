@@ -1,0 +1,15 @@
+#
+# 	LAUNCH SPECIFICATION 
+#
+
+
+Bundle-Version:				1.0.0.${tstamp}
+Bundle-SymbolicName:		com.acme.prime.upper.propvider.launch
+JPM-Command:				propvdr
+
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=com.acme.prime.upper.propvider.provider)',\
+	osgi.identity;filter:='(osgi.identity=com.acme.prime.upper.propvider.command)'
+
+-runbundles: ${error;You must first resolve this bndrun file before you can run it}
